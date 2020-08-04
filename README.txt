@@ -28,23 +28,33 @@ Google every second).
 (III) Evaluation of iCellSpeed. We let mobile devices run file downloading,
 DASH video streaming and Zoom video conferencing.
 
-Both type-I and type-II experiments are performed via the ApplicationOnTheGo
-task in MI-LAB (with specific configuration for 500MB file downloading) and was
-primarily performed from Aug 25 2019 to March 13, 2020. For type-I, at every
-static location spot, we conducted experiment in both default networking
-settings and controlled networking settings with iCellSpeed or swiching
-airplane mode for comparison.  For type-II, most experiment traces are
-collected under default networking settings except particular routes with
-iCellSpeed enabled or switching airplane mode.
+Both type-I static and type-I driving experiments are performed via the
+ApplicationOnTheGo task in MI-LAB (with specific configuration for 500MB file
+downloading) and was primarily performed from Aug 25 2019 to March 13, 2020.
+For type-I static, at every static location spot, we conducted experiment in
+both default networking settings and controlled networking settings with
+iCellSpeed or swiching airplane mode for comparison.  For type-I driving, most
+experiment traces are collected under default networking settings except
+particular routes with iCellSpeed enabled or switching airplane mode.
+
+For type-II experiment, we release the extra experiment collected on March,
+2020 using Sprint at Lafayette, IN. The driving experiments are performed vai
+the MMLabv2 task in MI-LAB (with continously sending PING packet to Google
+server every second). Note, we have already released results colected before
+2020 in our HotMobile2020 dataset release
+(http://milab.cs.purdue.edu/hotmobile2020_release/).
+
+For type-III experiment, we evaluate the application performance with/without
+iCellSpeed. The experiments are performed in June 2020.
+File downloading: download 500 MB file from our server.
+DASH video streaming: https://bitmovin.com/demos/stream-test?format=hls&manifest=https%3A%2F%2Fcdn.bitmovin.com%2Fcontent%2Fdemos%2F4k%2F38e843e0-1998-11e9-8a92-c734cd79b4dc%2Fmanifest.m3u8.
+Video conferencing: using Zoom desktop client with USB tethered cellular network.
 
 As a result, we have three datasets:
 
 D1) type-I experiments in the static/driving tests (heavy load tasks via
 ApplicationOnTheGo).
 D2) type-II experiments in the driving tests (light load tasks via MMLabv2).
-Note, we have already released results colected before 2020 in our
-HotMobile2020 dataset release. Here, we release the extra experiment collected
-on March, 2020 using Sprint at Lafayette, IN.
 D3) type-II evluation experiments (file downloading, DASH video streaming and
 Zoom video conferencing).
 
